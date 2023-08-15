@@ -1,0 +1,6 @@
+.home-main{
+    
+    height: 100vh;
+    padding:0px var(--padd_main);
+    padding-top:var(--nav_size);
+}
