@@ -1,5 +1,111 @@
+
 .navSec2Card-main{
     width: 100%;
     height: 100%;
-    border: 2px solid red;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5%; */
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    transition: background-image 500ms ease-in-out,background-color 500ms ease-in-out;
+    
 }
+
+
+
+ .home-hover{
+  
+    background-image: url('../../../assets/background\ 1.jpg');
+    color: #fff !important;
+  }
+
+  .home-hove-leave{
+    background-color: white;
+    transition: background-image 500ms ease-in-out;
+  }
+
+
+ .gallery-hover{
+    background-image: url('../../../assets/camare\ 1.jpg'); 
+    color: #fff !important;
+  }
+
+  .gallery-hove-leave{
+    background-image: none;
+  }
+
+ .Services-hover{
+    background-image: url('../../../assets/cam\ set.jpeg');
+    color: #fff !important;
+  }
+
+  .Services-hove-leave{
+    background-color: white;
+  }
+
+ .Blog-hover{
+    background-image: url('../../../assets/back\ 3.jpg');
+    color: #fff !important;
+  }
+
+  .Blog-hove-leave{
+    background-color: white;
+  }
+
+
+ .Contact-hover{
+    background-image: url('../../../assets/back\ contact.jpg');
+    color: #fff !important;
+  }
+
+  .Contact-hove-leave{
+    background-color: white;
+  }
+
+
+  
+
+.navSec2Card-main-sp{
+    position: relative;
+    font-size: 2.5rem;
+    font-family: Marcellus, sans-serif;
+    /* transition: all 500ms ease-in-out !important; */
+    transition: transform 500ms ease-in-out ,background-color 500ms ease-in-out  ,width 500ms ease-in-out ,color 500ms ease-in-out;
+    padding:0.5em;
+    padding-bottom: 0;
+}
+
+.navSec2Card-main-sp:hover{
+    color: #fff;
+}
+
+.navSec2Card-main-sp::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0.5em;
+    width: 0;
+    height: 2px;
+    
+    background-color: transparent;
+    /* transition: all 500ms ease-in-out !important; */
+
+    transition: transform 500ms ease-in-out ,background-color 500ms ease-in-out  ,width 500ms ease-in-out;
+   
+}
+
+
+.navSec2Card-main-sp:hover::after {
+    width: calc(100% - 1em);
+    background-color: rgb(255, 254, 254);
+    transform: translateX(0);
+  } 
+  
+
+ 
