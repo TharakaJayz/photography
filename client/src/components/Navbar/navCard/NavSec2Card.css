@@ -10,17 +10,18 @@
     background-color: #fff;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    /* filter: grayscale(0%) brightness(70%) saturate(0%); */
+    
     
     
     transition: background-image 500ms ease-in-out,background-color 500ms ease-in-out;
     
-}
-
-
-
- .home-hover{
+  }
   
+  
+  
+  .home-hover{
     background-image: url('../../../assets/background\ 1.jpg');
     color: #fff !important;
   }
@@ -73,7 +74,7 @@
 
 .navSec2Card-main-sp{
     position: relative;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: Marcellus, sans-serif;
     /* transition: all 500ms ease-in-out !important; */
     transition: transform 500ms ease-in-out ,background-color 500ms ease-in-out  ,width 500ms ease-in-out ,color 500ms ease-in-out;

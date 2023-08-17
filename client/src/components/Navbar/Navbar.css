@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    z-index: 5000 !important;
+    z-index: 500 !important;
     
     /* background-color: yellow; */
 
@@ -37,6 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5000 !important;
+  background-color: #fff;
 }
 
 .nav-sec--1-div_1{
@@ -76,9 +78,103 @@
     background-color: black;
     height: 2.5px;
     width: 25px;
+    /* transition: transform 500ms ease-in-out; */
     
 }
 
+.sp1{
+    /* background-color: red; */
+}
+
+.span1-clicked{
+    
+    /* transform: rotate(45deg); */
+    /* transform: translateY(5px) rotate(135deg); */
+    animation: span1-animation 800ms ease-in-out  1 ;
+    animation-fill-mode: forwards;
+}
+.span2-clicked{
+    
+    /* transform: translateY(-5px)  rotate(45deg); */
+    animation: span2-animation 800ms ease-in-out  1 ;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes span1-animation{
+    0% {
+    }
+    
+    50%{
+          transform: translateY(5px) rotate(0);
+          
+    }
+    100% {
+        transform: translateY(5px) rotate(45deg);
+        
+    }
+  }
+
+@keyframes span2-animation{
+    0% {
+    }
+    
+    50%{
+          transform: translateY(-5px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(-5px) rotate(-45deg); 
+    }
+  }
+
+.span1-Unclicked{
+    animation: span1-animation-unclicked 800ms ease-in-out  1 ;
+    animation-fill-mode: forwards;
+    
+}
+
+.span2-Unclicked{
+    animation: span2-animation-unclicked 800ms ease-in-out  1 ;
+   
+    
+}
+
+
+@keyframes span1-animation-unclicked{
+    0% {
+        /* background-color: blue; */
+        transform: translateY(5px) rotate(45deg);
+    }
+    
+    50%{
+          transform: translateY(5px) rotate(0);
+          
+          
+    }
+    100% {
+        transform: translateY(0px) rotate(0)
+        
+    }
+  }
+
+@keyframes span2-animation-unclicked{
+    0% {
+        transform: translateY(-5px) rotate(-45deg); 
+        /* background-color: yellow; */
+    }
+    
+    50%{
+          /* transform: translateY(5px) rotate(0); */
+          transform: translateY(-5px) rotate(0)
+          
+    }
+    100% {
+        transform: translateY(0) rotate(0)
+        
+    }
+  }
 
 
 .nav-sec-b{

@@ -15,7 +15,9 @@ const Navbar = () => {
 
   const emailLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+  const[menuStyleLogic,setMenuStyleLogic] = useState(false);
 
+  const[menuOffStyle,setMenuOffStyle] = useState([]);
   return (
     <div className="nav-main">
       <section className="nav-sec nav-sec--1">
@@ -34,9 +36,13 @@ const Navbar = () => {
           }}
         >
           Menu{" "}
-          <section className="nav-sec--1-div_3-sec">
-            <span className="nav-sec--1-div_3-sec-sp sp1"></span>
-            <span className="nav-sec--1-div_3-sec-sp sp2"></span>
+          <section className="nav-sec--1-div_3-sec" onClick={() =>{
+            setMenuStyleLogic(!menuStyleLogic);
+            setMenuOffStyle(['span1-Unclicked','span2-Unclicked']);
+          }}>
+            <span className={ menuStyleLogic ?`nav-sec--1-div_3-sec-sp sp1 span1-clicked` : `nav-sec--1-div_3-sec-sp sp1 ${menuOffStyle[0]}` }></span>
+            <span className={ menuStyleLogic ?`nav-sec--1-div_3-sec-sp sp2 span2-clicked` : `nav-sec--1-div_3-sec-sp sp2 ${menuOffStyle[1]}`}></span>
+            {/* <span className="nav-sec--1-div_3-sec-sp sp2"></span> */}
           </section>
         </div>
       </section>
