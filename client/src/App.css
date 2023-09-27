@@ -1,6 +1,9 @@
 :root{
   --nav_size:15vh;
   --padd_main:1.5vw;
+  --width_main:min(100% ,1800px);
+  --loading_time:500ms;
+  --font-second:Marcellus, sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto+Mono&display=swap');
 
@@ -11,4 +14,17 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+}
+
+.main_page{
+  transition: opacity  var(--loading_time) ease-in-out;
+  overflow-x: hidden;
+}
+
+.main_style_loading{
+  opacity: 0;
+}
+
+.main_style_loaded{
+  opacity: 1;
 }

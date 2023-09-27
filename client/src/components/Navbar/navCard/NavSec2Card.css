@@ -2,22 +2,30 @@
 .navSec2Card-main{
     width: 100%;
     height: 100%;
+    /* height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%; */
+    
    
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     /* gap: 5%; */
     background-color: #fff;
     background-position: center;
     background-size: cover;
+   
     /* background-attachment: fixed; */
     /* filter: grayscale(0%) brightness(70%) saturate(0%); */
-    
+    /* background-color: red; */
     
     
     transition: background-image 500ms ease-in-out,background-color 500ms ease-in-out;
-    
+    z-index: 5000 !important;
   }
+  
+
   
   
   
@@ -74,12 +82,21 @@
 
 .navSec2Card-main-sp{
     position: relative;
-    font-size: 3rem;
-    font-family: Marcellus, sans-serif;
+    /* font-size: 3rem; */
+    /* font-size:clamp(1rem,2vw + 1rem , 3rem); */
+    font-size:clamp(1rem,3.5vw + 1rem , 3.5rem);
+
+    /* font-family: Marcellus, sans-serif; */
+
+    font-family: var(--font-second);
+
     /* transition: all 500ms ease-in-out !important; */
     transition: transform 500ms ease-in-out ,background-color 500ms ease-in-out  ,width 500ms ease-in-out ,color 500ms ease-in-out;
     padding:0.5em;
     padding-bottom: 0;
+    /* margin-bottom: 0.5em; */
+    cursor: pointer;
+    /* border:2px solid pink; */
 }
 
 .navSec2Card-main-sp:hover{
@@ -110,3 +127,46 @@
   
 
  
+  @media (max-width:1379px) {
+    .navSec2Card-main{
+      height: auto;
+      padding-top:max(13vh, 2em);
+      padding-bottom:max(13vh, 2em);
+      
+    }
+  }
+ 
+  @media (max-width:785px) {
+    .navSec2Card-main{
+       
+       
+    }
+
+    .navSec2Card-main-sp{
+      padding:1em;
+      padding-bottom: 0;
+    }
+  }
+ 
+  @media (max-width:576px) {
+    .navSec2Card-main{
+      height: 100%;
+      padding: unset !important;
+    }
+
+  }
+ 
+  @media (max-width:489px) {
+    .navSec2Card-main{
+      flex-direction: column;
+      
+    }
+
+    .navSec2Card-main-sp{
+      padding:0.5em;
+      padding-bottom: 0;
+    }
+
+   
+  }
+

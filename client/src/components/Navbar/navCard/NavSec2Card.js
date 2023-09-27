@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import "./NavSec2Card.css";
+import { useNavigate } from "react-router-dom";
 const NavSec2Card = (props) => {
   const [classStyle, setClassStyle] = useState("");
+  const navigation = useNavigate();
 
   return (
     <div className={`navSec2Card-main ${props.className} ${classStyle}  `}>
       <span
         className="navSec2Card-main-sp sec2Card-sp1"
+
+
+        onClick={()=>{
+          navigation("/");
+          window.location.reload();
+      }}
+        
         onMouseEnter={() => {
           setClassStyle("home-hover");
         }}
@@ -18,6 +27,10 @@ const NavSec2Card = (props) => {
       </span>
       <span
         className="navSec2Card-main-sp sec2Card-sp2"
+        onClick={()=>{
+          navigation("/gallery");
+          window.location.reload();
+      }}
         onMouseEnter={() => {
           setClassStyle("gallery-hover");
         }}

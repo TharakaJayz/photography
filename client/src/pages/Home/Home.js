@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,9 +25,19 @@ import img3 from "../../assets/back contact.jpg";
 
 const Home = () => {
 
+  const [isLoading,setIsLoading] = useState(true);
+
+  useEffect(() =>{
+
+    setTimeout(()=>{
+      setIsLoading(false);
+    },500)
+
+  },[])
+
   
   return (
-    <div className="home-main">
+    <div className= {isLoading ? `home-main loading_home` : `home-main loaded_home`}>
       <div className="home-main-sub">
         <Swiper
 

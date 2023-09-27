@@ -1,0 +1,74 @@
+.gallery-main{
+
+    margin:0px var(--padd_main);
+    padding:0px var(--padd_main);
+    padding-top:var(--nav_size);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1 !important;
+    position: relative;
+    margin-top: -100vh;
+    
+}
+
+.gallery_sub{
+    width: var(--width_main);
+}
+.gallary_section_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size:clamp(0.6rem,1vw + 0.15rem , 2.5rem);
+    gap: 2em;
+    align-items: center;
+    margin-top: 3em;
+    font-family: var(--font-second);
+    text-transform: uppercase;
+    
+   
+    
+}
+
+.gallary_span{
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid transparent;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.title_selected{
+    border-bottom: 2px solid black !important;
+}
+
+.gallary_span:hover{
+    color: rgb(139, 10, 139);
+}
+
+.gallary_section_body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    /* border-top: 2px solid rgb(207, 202, 202); */
+    padding-top: 2vh;
+     
+}
+
+.item_cardWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+    /* border:1px solid red; */
+}
+.card_wrapperDisplay{
+    opacity: 0;
+}
