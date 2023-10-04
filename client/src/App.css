@@ -18,7 +18,12 @@
 
 .main_page{
   transition: opacity  var(--loading_time) ease-in-out;
-  overflow-x: hidden;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden; */
 }
 
 .main_style_loading{

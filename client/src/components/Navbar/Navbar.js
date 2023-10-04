@@ -81,6 +81,7 @@ const Navbar = () => {
          
         </section>
       </section>
+      <span>Nav bar logic should be chsnged</span>
 
       {/* <NavCard  className = { menuLogic ? 'nav-card display'  : 'nav-card'} /> */}
     </div>

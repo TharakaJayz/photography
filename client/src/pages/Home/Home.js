@@ -16,6 +16,7 @@ import { Autoplay, Pagination, Navigation, EffectFade ,Zoom} from "swiper/module
 import img1 from "../../assets/back 3.jpg";
 import img2 from "../../assets/background 1.jpg";
 import img3 from "../../assets/back contact.jpg";
+import Navbar from "../../components/Navbar/Navbar";
 
 
 
@@ -38,7 +39,9 @@ const Home = () => {
   
   return (
     <div className= {isLoading ? `home-main loading_home` : `home-main loaded_home`}>
+      
       <div className="home-main-sub">
+        
         <Swiper
 
 style={{

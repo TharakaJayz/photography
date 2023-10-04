@@ -341,9 +341,6 @@ const Gallery = () => {
                 }
                 }))}  
 
-
-                    - on click true - 
-
               </div>
             
           }

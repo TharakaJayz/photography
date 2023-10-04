@@ -15,7 +15,7 @@ const App = () => {
     },1000)
   })
   return <div className= {isLoading ? ` main_page main_style_loading`:` main_page main_style_loaded`}>
-    <Navbar />
+   <Navbar />
     <Routes>
     <Route path="/"  element={<Home />}   />
     <Route path="/gallery"  element={<Gallery />}   />
