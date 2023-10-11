@@ -6,11 +6,7 @@ const PageItemCard = (props) => {
 
   const backgroundImageUrl = 'url("../../assets/camare 1.jpg")';
 
-  const dynamicStyles = {
-    color: 'red',
-    backgroundImage: backgroundImageUrl,
-    backgroundSize: 'cover', // You can adjust this property as needed
-  };
+
 
   return (
     <div  className='pageItemMain'>

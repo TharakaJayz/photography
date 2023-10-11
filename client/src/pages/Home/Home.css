@@ -13,9 +13,10 @@
     transition: opacity  var(--loading_time) ease-in-out;
     justify-content: center;
 
-    margin-top: -85vh;
-    margin-top: -100vh;
-    z-index: -1 !important;
+    /* margin-top: -85vh; */
+    /* margin-top: -100vh; */
+    /* z-index: -1 !important; */
+    
     
   }
 
@@ -44,7 +45,7 @@
     height: 100%;
     object-fit: cover; 
     object-position: center;
-    z-index: 200;
+    z-index: 20;
    
   /* animation: scaleDown 3000ms ease-in-out both;
   animation-iteration-count: 1; */

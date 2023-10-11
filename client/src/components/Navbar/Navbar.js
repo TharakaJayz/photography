@@ -13,7 +13,7 @@ const Navbar = () => {
 
     setTimeout(() =>{
       setIsLoading(false);
-    },500);
+    },500);  
     
 
   } ,[] )
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
         <div className="nav-sec--1-div_2"
         onClick={() =>{
-          navigation('/')
+          navigation("/")
           window.location.reload()
         }}
         >
@@ -66,6 +66,7 @@ const Navbar = () => {
           </section>
         </div>
         </section>
+        
       <section className={menuLogic ? "nav-sec-b display" : "nav-sec-b displayed"}>
         <section className="nav-sec nav-sec--2">
           <NavSec2Card />
@@ -81,7 +82,6 @@ const Navbar = () => {
          
         </section>
       </section>
-      <span>Nav bar logic should be chsnged</span>
 
       {/* <NavCard  className = { menuLogic ? 'nav-card display'  : 'nav-card'} /> */}
     </div>
