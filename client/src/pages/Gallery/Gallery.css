@@ -8,7 +8,7 @@
     justify-content: center;
     z-index: 1 !important;
     position: relative;
-    /* margin-top: -100vh; */
+    /* display: none; */
     
 }
 
@@ -23,11 +23,16 @@
     gap: 2em;
     align-items: center;
     margin-top: 3em;
+    /* padding-top: 3em; */
     font-family: var(--font-second);
     text-transform: uppercase;
     
    
     
+}
+
+.gallery_sec_display{
+    background-color: red;
 }
 
 .gallary_span{

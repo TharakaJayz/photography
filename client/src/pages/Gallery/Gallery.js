@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 import PageHeadCard from "../../components/pageHeadCard/PageHeadCard";
 import PageItemCard from "../../components/pageItemCard/PageItemCard";
@@ -13,6 +13,9 @@ const Gallery = () => {
   const [slectedDisplayTitle, setSelectedDisplayTitle] = useState("all");
 
   const [displauLogic,setDisplayLogic] = useState(false);
+
+  const[sectionLogic,setSectionLogic] = useState(false);
+  const ItemCardRef = useRef();
   useEffect(() =>{
 
     setTimeout(() =>{
@@ -20,12 +23,43 @@ const Gallery = () => {
 
         setDisplayLogic(false);
         setSelectedDisplayTitle(slectedTitle);
-        console.log(displauLogic);
+        // console.log(displauLogic);
       }
     },500);
     
 
   } ,[displauLogic] )
+
+useEffect(()  =>{
+  const rootMarginInPixels = '15vh'; // Your desired margin in viewport units
+  const rootMarginInPixelsValue = (window.innerHeight * parseFloat(rootMarginInPixels)) / 100;
+
+  const observer = new IntersectionObserver(
+    (entries)  =>{
+      entries.forEach((entry)=>{
+        if(!entry.isIntersecting){
+          // console.log("element is not in range !!")
+          setSectionLogic(true);
+        }
+        
+        if(entry.isIntersecting){
+          // console.log("element in range !!")
+          if(sectionLogic){
+            setSectionLogic(false);
+          }
+        }
+      })
+    } ,{
+      root:null,
+      rootMargin: `-${rootMarginInPixelsValue}px 0px`,
+      threshold:0
+
+    }
+  )
+  
+  observer.observe(ItemCardRef.current)
+
+} ,[])
 
   // const cardDetails = [
   //    [
@@ -197,8 +231,11 @@ const Gallery = () => {
   return (
     <div className="gallery-main">
       <div className="gallery_sub">
+        <div ref={ItemCardRef}>
+
         <PageHeadCard title="Gallery" />
-        <section className="gallary_section_title">
+        </div>
+        <section className= {sectionLogic ? "gallary_section_title gallery_sec_display" : "gallary_section_title"}>
           <span
             className={
               slectedTitle === "all"
