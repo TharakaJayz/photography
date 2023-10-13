@@ -39,14 +39,16 @@ useEffect(()  =>{
       entries.forEach((entry)=>{
         if(!entry.isIntersecting){
           // console.log("element is not in range !!")
+          console.log("sectting logic when leaving",true);
           setSectionLogic(true);
         }
         
         if(entry.isIntersecting){
           // console.log("element in range !!")
           if(sectionLogic){
-            setSectionLogic(false);
           }
+          console.log("sectting logic when entering",false);
+          setSectionLogic(false);
         }
       })
     } ,{

@@ -22,17 +22,23 @@
     font-size:clamp(0.6rem,1vw + 0.15rem , 2.5rem);
     gap: 2em;
     align-items: center;
-    margin-top: 3em;
-    /* padding-top: 3em; */
+    /* margin-top: 3em; */
+    padding-top: 3em;
+    margin-bottom: 3em;
     font-family: var(--font-second);
     text-transform: uppercase;
-    
-   
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1em;
     
 }
 
 .gallery_sec_display{
-    background-color: red;
+    /* position: absolute;
+    top:250px */
+    position: sticky;
+    top: 15vh;
+    padding-bottom: 1em;
+    z-index: 500000;
 }
 
 .gallary_span{
