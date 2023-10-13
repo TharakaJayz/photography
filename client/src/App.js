@@ -5,6 +5,7 @@ import {Routes,Route}  from 'react-router-dom'
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   const [isLoading,setIsLoading] = useState(true);
@@ -19,6 +20,7 @@ const App = () => {
     <Routes>
     <Route path="/"  element={<Home />}   />
     <Route path="/gallery"  element={<Gallery />}   />
+    <Route path="/contact"  element={<Contact />}   />
     </Routes>
     
     

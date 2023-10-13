@@ -75,6 +75,10 @@ const NavSec2Card = (props) => {
       </span>
       <span
         className="navSec2Card-main-sp sec2Card-sp6"
+        onClick={()=>{
+          navigation("/contact");
+          window.location.reload();
+      }}
         onMouseEnter={() => {
           setClassStyle("Contact-hover");
         }}

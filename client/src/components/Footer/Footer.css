@@ -44,13 +44,19 @@
 
 }
 
-.footer_sec_2_logo_div > img{
-    width: 150px;
+#footerAmelia{
+    /* width: 150px;
+    width: 9vw;
+    width: 20vw;
+    width: 10vw; */
+    width: clamp(10vw,150px,9.5vw);
     height: auto;
 }
 
-.footer_sec_2 > span{
-
+#footer_span{
+   
+    font-size:clamp(0.7rem,0.6vw + 0.5rem,2rem) !important;
+    color: rgb(86, 85, 85);
 }
 
 #emailSpan{
@@ -108,4 +114,27 @@
 #whatsapp :hover{
    
     color: #075e54;
+}
+
+
+@media(max-width:920px){
+    #footerAmelia{
+        width:15vw;
+    }
+}
+@media(max-width:650px){
+    #footerAmelia{
+        width:20vw;
+    }
+}
+
+@media(max-width:450px){
+    #footerAmelia{
+        width:25vw;
+    }
+}
+@media(max-width:340px){
+    #footerAmelia{
+        width:29vw;
+    }
 }

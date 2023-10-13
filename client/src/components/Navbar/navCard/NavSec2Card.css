@@ -119,6 +119,13 @@
 }
 
 
+.sec2Card-sp3{
+  display: none;
+}
+
+.sec2Card-sp4{
+  display: none;
+}
 .navSec2Card-main-sp:hover::after {
     width: calc(100% - 1em);
     background-color: rgb(255, 254, 254);

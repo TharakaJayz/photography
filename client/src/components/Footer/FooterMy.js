@@ -39,17 +39,17 @@ const FooterMy = () => {
       </section>
       <section className="footer_sec_2">
         <div className="footer_sec_2_logo_div">
-          <img src={ameliaLogo} alt="amelia" />
+          <img src={ameliaLogo} alt="amelia"  id="footerAmelia"/>
         </div>
-        <span> Lifestyle Fine Art Photographer based in Colombo & England</span>
-        <span> +94 71 873 6614</span>
-        <span>
+        <span id="footer_span"> Lifestyle Fine Art Photographer based in Colombo & England</span>
+        <span id="footer_span"> +94 71 873 6614</span>
+        <span id="footer_span">
           {" "}
           <a id="emailSpan" href={emailLink}>
             ameliaweddingstudio@gmail.com
           </a>
         </span>
-        <span> 207/1,Rathmaldeniya Road, Pannipitiya, Sri Lanka</span>
+        <span id="footer_span"> 207/1,Rathmaldeniya Road, Pannipitiya, Sri Lanka</span>
         <div className="footer_sec_2_icon_div">
           <span className="footer_sec_2_icon_div_span" id="facebook">
             {" "}

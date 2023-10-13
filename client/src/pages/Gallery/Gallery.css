@@ -19,6 +19,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-size:clamp(0.6rem,1vw + 0.15rem , 2.5rem);
     font-size:clamp(0.6rem,1vw + 0.3rem , 2.5rem);
     /* font-size: 1.2vw; */
@@ -128,6 +129,13 @@
     }
 }
 
+@media(max-width:420px){
+    .item_cardWrapper{
+        flex-wrap: unset;
+        flex-direction: column;
+        gap: 0;
+    }
+}
 @media(max-width:410px){
     .gallary_section_title{
         font-size: 3vw;

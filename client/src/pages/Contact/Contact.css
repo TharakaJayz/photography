@@ -1,0 +1,6 @@
+.contact-main{
+    min-height: 100vh;
+    width: var(--width_main);
+    padding:0px var(--padd_main);
+    padding-top:var(--nav_size);
+}
