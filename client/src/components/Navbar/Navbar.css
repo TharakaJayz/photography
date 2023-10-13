@@ -31,6 +31,7 @@
    top:-85vh;
    z-index: 500;
    overflow: visible;
+   
     
 }
 
@@ -103,6 +104,10 @@
  
 }
 
+#amelia_logo{
+    width: 150px;
+    height: auto;
+}
 
 .loading {
   

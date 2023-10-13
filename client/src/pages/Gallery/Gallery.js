@@ -8,60 +8,87 @@ import image2 from "../../assets/preWedding_1.jpg";
 import image3 from "../../assets/wedding_1.jpg";
 import image4 from "../../assets/wedding_2.jpg";
 import image5 from "../../assets/preWedding_2.jpg";
+import FooterMy from "../../components/Footer/FooterMy";
 const Gallery = () => {
   const [slectedTitle, setSelectedTitle] = useState("all");
   const [slectedDisplayTitle, setSelectedDisplayTitle] = useState("all");
 
-  const [displauLogic,setDisplayLogic] = useState(false);
+  const [displauLogic, setDisplayLogic] = useState(false);
 
-  const[sectionLogic,setSectionLogic] = useState(false);
+  const [sectionLogic, setSectionLogic] = useState(false); // logi to change the postion of title section whem scrolling
+
+  const [sectionLogicAfter, setSectionLogicAfter] = useState(false); // logic for change section opacity when leaving item cards in viewport
+
   const ItemCardRef = useRef();
-  useEffect(() =>{
-
-    setTimeout(() =>{
-      if(displauLogic){
-
+  const ItemDivRef = useRef();
+  useEffect(() => {
+    setTimeout(() => {
+      if (displauLogic) {
         setDisplayLogic(false);
         setSelectedDisplayTitle(slectedTitle);
         // console.log(displauLogic);
       }
-    },500);
-    
+    }, 500);
+  }, [displauLogic]);
 
-  } ,[displauLogic] )
+  useEffect(() => {
+    const rootMarginInPixels = "15vh"; // Your desired margin in viewport units
+    const rootMarginInPixelsValue =
+      (window.innerHeight * parseFloat(rootMarginInPixels)) / 100;
 
-useEffect(()  =>{
-  const rootMarginInPixels = '15vh'; // Your desired margin in viewport units
-  const rootMarginInPixelsValue = (window.innerHeight * parseFloat(rootMarginInPixels)) / 100;
-
-  const observer = new IntersectionObserver(
-    (entries)  =>{
-      entries.forEach((entry)=>{
-        if(!entry.isIntersecting){
-          // console.log("element is not in range !!")
-          console.log("sectting logic when leaving",true);
-          setSectionLogic(true);
-        }
-        
-        if(entry.isIntersecting){
-          // console.log("element in range !!")
-          if(sectionLogic){
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            setSectionLogic(true);
           }
-          console.log("sectting logic when entering",false);
-          setSectionLogic(false);
-        }
-      })
-    } ,{
-      root:null,
-      rootMargin: `-${rootMarginInPixelsValue}px 0px`,
-      threshold:0
 
-    }
-  )
-  
-  observer.observe(ItemCardRef.current)
+          if (entry.isIntersecting) {
+            if (sectionLogic) {
+            }
 
-} ,[])
+            setSectionLogic(false);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: `-${rootMarginInPixelsValue}px 0px`,
+        threshold: 0,
+      }
+    );
+
+    observer.observe(ItemCardRef.current);
+  }, []);
+  useEffect(() => {
+    const rootMarginInPixels = "30vh"; // Your desired margin in viewport units
+    const rootMarginInPixelsValue =
+      (window.innerHeight * parseFloat(rootMarginInPixels)) / 100;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            setSectionLogicAfter(true);
+          }
+
+          if (entry.isIntersecting) {
+            if (sectionLogic) {
+            }
+
+            setSectionLogicAfter(false);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: `-${rootMarginInPixelsValue}px 0px`,
+        threshold: 0,
+      }
+    );
+
+    observer.observe(ItemDivRef.current);
+  }, []);
 
   // const cardDetails = [
   //    [
@@ -154,76 +181,76 @@ useEffect(()  =>{
   // ];
   const cardDetails = [
     {
-      type:"engagements",
+      type: "engagements",
       image: image1,
       title_1: "Binura & Uthpala",
       title_2: "Engagment",
     },
     {
-      type:"prewedding",
+      type: "prewedding",
       image: image2,
       title_1: "Hansi & Gasith",
       title_2: "Pre Wedding shoot",
     },
     {
-      type:"weddings",
+      type: "weddings",
       image: image3,
       title_1: "Maneesha & Bhathiya",
       title_2: "Wedding",
     },
 
     {
-      type:"engagements",
+      type: "engagements",
       image: image1,
       title_1: "Binura & Uthpala",
       title_2: "Engagment",
     },
     {
-      type:"prewedding",
+      type: "prewedding",
       image: image2,
       title_1: "Hansi & Gasith",
       title_2: "Pre Wedding shoot",
     },
     {
-      type:"weddings",
+      type: "weddings",
       image: image4,
       title_1: "Maneesha & Bhathiya",
       title_2: "Wedding",
     },
 
     {
-      type:"engagements",
+      type: "engagements",
       image: image1,
       title_1: "Binura & Uthpala",
       title_2: "Engagment",
     },
     {
-      type:"prewedding",
+      type: "prewedding",
       image: image2,
       title_1: "Hansi & Gasith",
       title_2: "Pre Wedding shoot",
     },
     {
-      type:"weddings",
+      type: "weddings",
       image: image3,
       title_1: "Maneesha & Bhathiya",
       title_2: "Wedding",
     },
 
     {
-      type:"engagements",
+      type: "engagements",
       image: image1,
       title_1: "Binura & Uthpala",
       title_2: "Engagment",
     },
     {
-      type:"prewedding",
+      type: "prewedding",
       image: image5,
       title_1: "Hansi & Gasith",
       title_2: "Pre Wedding shoot",
     },
     {
-      type:"weddings",
+      type: "weddings",
       image: image3,
       title_1: "Maneesha & Bhathiya",
       title_2: "Wedding",
@@ -234,10 +261,19 @@ useEffect(()  =>{
     <div className="gallery-main">
       <div className="gallery_sub">
         <div ref={ItemCardRef}>
-
-        <PageHeadCard title="Gallery" />
+          <PageHeadCard title="Gallery" />
         </div>
-        <section className= {sectionLogic ? "gallary_section_title gallery_sec_display" : "gallary_section_title"}>
+        <section
+          className={
+            // sectionLogic ? "gallary_section_title gallery_sec_display" : "gallary_section_title"
+
+            sectionLogic
+              ? sectionLogicAfter
+                ? "gallary_section_title gallery_sec_display gallery_sec_display_after"
+                : "gallary_section_title gallery_sec_display"
+              : "gallary_section_title"
+          }
+        >
           <span
             className={
               slectedTitle === "all"
@@ -248,7 +284,6 @@ useEffect(()  =>{
               setSelectedTitle("all");
               setDisplayLogic(true);
             }}
-         
           >
             ALL
           </span>
@@ -328,62 +363,67 @@ useEffect(()  =>{
             );
           })} */}
           {
-              <div className= {displauLogic ? "item_cardWrapper card_wrapperDisplay" :"item_cardWrapper"}>
+            <div
+              ref={ItemDivRef}
+              className={
+                displauLogic
+                  ? "item_cardWrapper card_wrapperDisplay"
+                  : "item_cardWrapper"
+              }
+            >
+              {slectedDisplayTitle === "all" &&
+                cardDetails.map((singleItem) => {
+                  if (true) {
+                    return (
+                      <PageItemCard
+                        image={singleItem.image}
+                        title_1={singleItem.title_1}
+                        title_2={singleItem.title_2}
+                      />
+                    );
+                  }
+                })}
 
-              {slectedDisplayTitle === "all" &&( cardDetails.map((singleItem) => {
-                  if(true){
-                  return (
-                    
-                    <PageItemCard
-                      image={singleItem.image}
-                      title_1={singleItem.title_1}
-                      title_2={singleItem.title_2}
-                    />
-                  )
-                }
-                }))}  
-
-              {slectedDisplayTitle === "weddings" &&( cardDetails.map((singleItem) => {
-                  if(singleItem.type === "weddings"){
-                  return (
-                    
-                    <PageItemCard
-                      image={singleItem.image}
-                      title_1={singleItem.title_1}
-                      title_2={singleItem.title_2}
-                    />
-                  )
-                }
-                }))}  
-              {slectedDisplayTitle === "engagements" &&( cardDetails.map((singleItem) => {
-                  if(singleItem.type === "engagements"){
-                  return (
-                    
-                    <PageItemCard
-                      image={singleItem.image}
-                      title_1={singleItem.title_1}
-                      title_2={singleItem.title_2}
-                    />
-                  )
-                }
-                }))}  
-              {slectedDisplayTitle === "prewedding" &&( cardDetails.map((singleItem) => {
-                  if(singleItem.type === "prewedding"){
-                  return (
-                    
-                    <PageItemCard
-                      image={singleItem.image}
-                      title_1={singleItem.title_1}
-                      title_2={singleItem.title_2}
-                    />
-                  )
-                }
-                }))}  
-
-              </div>
-            
+              {slectedDisplayTitle === "weddings" &&
+                cardDetails.map((singleItem) => {
+                  if (singleItem.type === "weddings") {
+                    return (
+                      <PageItemCard
+                        image={singleItem.image}
+                        title_1={singleItem.title_1}
+                        title_2={singleItem.title_2}
+                      />
+                    );
+                  }
+                })}
+              {slectedDisplayTitle === "engagements" &&
+                cardDetails.map((singleItem) => {
+                  if (singleItem.type === "engagements") {
+                    return (
+                      <PageItemCard
+                        image={singleItem.image}
+                        title_1={singleItem.title_1}
+                        title_2={singleItem.title_2}
+                      />
+                    );
+                  }
+                })}
+              {slectedDisplayTitle === "prewedding" &&
+                cardDetails.map((singleItem) => {
+                  if (singleItem.type === "prewedding") {
+                    return (
+                      <PageItemCard
+                        image={singleItem.image}
+                        title_1={singleItem.title_1}
+                        title_2={singleItem.title_2}
+                      />
+                    );
+                  }
+                })}
+            </div>
           }
         </section>
+        <FooterMy />
       </div>
     </div>
   );

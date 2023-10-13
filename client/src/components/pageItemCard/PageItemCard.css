@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
     gap: 2vh;
-    border-right: 1.5px solid rgb(188, 184, 184);
-    border: 2px solid rgb(195, 195, 195);
+    /* border-right: 1.5px solid rgb(188, 184, 184); */
+    /* border: 2px solid rgb(195, 195, 195); */
     padding-top: 5vh;
     padding-bottom: 5vh;
     /* background-color: rgb(245, 252, 245); */
@@ -37,6 +37,7 @@
     font-family: var(--font-second);
     transition: color 500ms ease-in-out;
     transition: scale 500ms ease-in-out;
+    font-size: 1.35vw;
 }
 
 .pageItemMain_title-1:hover{
@@ -47,6 +48,7 @@
 .pageItemMain_title-2{
     font-size:clamp(0.6rem, 1vw , 2.1rem);
     font-family: var(--font-second);
+    font-size: 1.1vw
 }
 
 @media(max-width:1001px){

@@ -4,6 +4,8 @@ import { AiOutlinePlus } from "react-icons/ai";
 // import NavCard from "./navCard/NavSec2Card";
 import NavSec2Card from "./navCard/NavSec2Card";
 import { useNavigate } from "react-router-dom";
+import ameliaLogo from '../../assets/image002-removebg-preview.png';
+
 const Navbar = () => {
   const [menuLogic, setMenuLogic] = useState(false);
 
@@ -41,8 +43,9 @@ const Navbar = () => {
           window.location.reload()
         }}
         >
-          AMELIA
-          <span>WEDDING PHOTOGRAPHER</span>
+          {/* AMELIA
+          <span>WEDDING PHOTOGRAPHER</span> */}
+          <img src ={ameliaLogo} alt="AMELIA" id="amelia_logo"  />
         </div>
         <div
           className="nav-sec--1-div_3"

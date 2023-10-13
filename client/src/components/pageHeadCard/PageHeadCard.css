@@ -1,6 +1,7 @@
 .page_head_main{
     width:100%;
     width: var(--width_main);
+    height: 32vw;
     height: 30vw;
     
     position: relative;
