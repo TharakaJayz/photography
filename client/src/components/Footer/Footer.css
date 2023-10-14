@@ -71,6 +71,10 @@
 #whatsappAnchor{
     all: unset;
 }
+
+#instaAnchor{
+    all: unset;
+}
 .footer_sec_2_icon_div{
     display: flex;
     gap: 0.5vw;

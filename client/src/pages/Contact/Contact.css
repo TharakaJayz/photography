@@ -7,10 +7,12 @@
 
 .contact-body{
     width: 100%;
+  
     margin-top: 5vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
     text-align: center;
+
 }
 
 .CB-sec-1 >span{
@@ -19,4 +21,140 @@
 
 #sec-1-sp-1{
     font-family: var( --font-second);
+    font-size: 4rem;
+    padding-bottom: 0.9em;
 }
+
+#sec-1-sp-2{
+    font-size: 1.2rem;
+}
+
+.sec-1-div-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+.div_logo_sec{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    width: 30%;
+    cursor: pointer;
+    color: rgb(68, 67, 67);
+    transition:  color 150ms ease-in-out;
+}
+
+.div_logo_sec:hover{
+    color: black;
+    & #whatsapp_logo_ct{
+        color: #075e54;
+    }
+    & #email_logo_ct{
+        color: #BB001B;
+    }
+    & #location_logo_ct{
+        color: rgb(4, 4, 130);
+    }
+
+    & #fb_logo_ct{
+        color: 	#4267B2;
+    }
+
+    & #insta_logo_ct {
+        color: #feda75;
+    }
+
+}
+
+.div_logo_sec > a{
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+    text-decoration: unset;
+    color: unset;
+}
+
+.div_logo{
+    width: 2vw;
+    height: auto;
+    margin-right: 2vw;
+   display: flex;
+   align-items: center;
+    text-align: center;  
+}
+
+.div_logo *{
+    width: 100%;
+    height: 100%;
+    transition: color 150ms ease-in-out;
+    
+}
+
+
+
+.div_logo_title{
+    text-align: left;
+}
+
+
+
+/* section 2 styling*/
+
+.CB-sec-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_form_div{
+    width: 80%;
+    border: 2px solid green;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact_form_heading{
+    font-size: 2rem;
+    font-weight: unset;
+}
+
+.ct_form_div_form{
+    width: 60%;
+}
+
+.ct_form_div_table{
+    width: 100%;
+    border:2px solid black
+}
+
+.ct_form_div_table_body{
+    width: 100%;
+    
+}
+
+.ct_form_div_table_body >tr{
+    width: 100%;
+  
+}
+
+#row1 > td{
+   
+}
+#row3 > td > textarea{
+   width: 100%;
+   color: red;
+}
+

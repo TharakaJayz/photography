@@ -58,7 +58,10 @@ const FooterMy = () => {
             </a>
           </span>
           <span className="footer_sec_2_icon_div_span" id="instagram">
+            <a  id="instaAnchor" href="https://www.instagram.com/amelia_wedding_studio/">
+
             <AiOutlineInstagram />{" "}
+            </a>
           </span>
           <span className="footer_sec_2_icon_div_span" id="whatsapp">
             {" "}
