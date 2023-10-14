@@ -4,3 +4,19 @@
     padding:0px var(--padd_main);
     padding-top:var(--nav_size);
 }
+
+.contact-body{
+    width: 100%;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.CB-sec-1 >span{
+    display: block;
+}
+
+#sec-1-sp-1{
+    font-family: var( --font-second);
+}
