@@ -64,6 +64,11 @@ const NavSec2Card = (props) => {
       </span>
       <span
         className="navSec2Card-main-sp sec2Card-sp5"
+
+        onClick={()=>{
+          navigation("/about");
+          window.location.reload();
+      }}
         onMouseEnter={() => {
           setClassStyle("home-hover");
         }}

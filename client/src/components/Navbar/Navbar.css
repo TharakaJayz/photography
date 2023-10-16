@@ -368,6 +368,7 @@
 .nav-sec--3-h4-2{
     font-weight: unset;
     font-size: min(4.2vw,1.2rem);
+    font-family: var(--font-first);
 }
 
 .nav-sec--3-h4-2 >a{

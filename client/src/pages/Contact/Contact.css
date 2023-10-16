@@ -26,7 +26,7 @@
 }
 
 #sec-1-sp-2{
-    font-size: 0.5rem + 1vw;
+    font-size: calc( 0.5rem + 1vw );
     padding-bottom: 2em;
 
 }
@@ -230,13 +230,19 @@
 }
 
 .CF-error_div{
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     color: red;
 }
 
 .CF-success_div{
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     color: green;
+}
+
+
+.CF-error_div ,
+.CF-success_div {
+    font-size: clamp(1rem, (0.2rem + 1vw),3rem);
 }
 
 @media (min-width:2105px){
@@ -245,6 +251,17 @@
         
         border:1px solid red;
 
+    }
+    .div_logo{
+        flex: 1;
+    }
+
+    .div_logo_title{
+        flex: 10;
+    }
+
+    #sec-1-sp-2{
+        font-size: calc(0.2rem + 1vw);
     }
 }
 
@@ -395,5 +412,10 @@
     #address_sp2{
         flex: 10;
     }
+
+    .CF-error_div ,
+.CF-success_div {
+    font-size: calc(0.5rem + 0.7vw);
+}
    
 }

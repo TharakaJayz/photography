@@ -8,7 +8,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import ameliaLogo from "../../assets/image002-removebg-preview.png";
 const FooterMy = () => {
-  const recipient = "tharakaprabhath300@gmail.com";
+  const recipient = "ameliaweddingstudio@gmail.com";
   const subject = "Hello from your Website";
   const body = "I just wanted to say hello!";
 
