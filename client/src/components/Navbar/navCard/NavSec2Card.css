@@ -6,7 +6,7 @@
     padding-top: 10%;
     padding-bottom: 10%; */
     
-   
+    margin:0px var(--padd_main);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
