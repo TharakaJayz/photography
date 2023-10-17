@@ -136,3 +136,22 @@
 
    
 }
+
+@media (max-width:550px){
+
+
+    .ab-sec-1_img{
+        width: 70%;
+    }
+
+   
+}
+@media (max-width:400px){
+
+
+    .ab-sec-1_img{
+        width: 80%;
+    }
+
+   
+}
