@@ -27,7 +27,7 @@ const Gallery = () => {
       if (displauLogic) {
         setDisplayLogic(false);
         setSelectedDisplayTitle(slectedTitle);
-        // console.log(displauLogic);
+      
       }
     }, 500);
   }, [displauLogic]);
@@ -91,95 +91,7 @@ const Gallery = () => {
     observer.observe(ItemDivRef.current);
   }, []);
 
-  // const cardDetails = [
-  //    [
-  //     <PageItemCard
-  //       image={image1}
-  //       title_1={"Binura & Uthpala"}
-  //       title_2={"Engagment"}
-  //     />,
-  //     <PageItemCard
-  //       image={image2}
-  //       title_1={"Hansi & Gasith"}
-  //       title_2={"Pre Wedding shoot"}
-  //     />,
-  //     <PageItemCard
-  //       image={image3}
-  //       title_1={"Maneesha & Bhathiya"}
-  //       title_2={"Wedding"}
-  //     />,
-  //   ],
-  // ];
-  // const cardDetails = [
-  //   [
-  //     {
-  //       image: image1,
-  //       title_1: "Binura & Uthpala",
-  //       title_2: "Engagment",
-  //     },
-  //     {
-  //       image:  image2 ,
-  //       title_1: "Hansi & Gasith",
-  //       title_2: "Pre Wedding shoot",
-  //     },
-  //     {
-  //       image: image3 ,
-  //       title_1: "Maneesha & Bhathiya",
-  //       title_2: "Wedding",
-  //     },
-  //   ],
-  //   [
-  //     {
-  //       image:  image1 ,
-  //       title_1: "Binura & Uthpala",
-  //       title_2: "Engagment",
-  //     },
-  //     {
-  //       image:  image2 ,
-  //       title_1: "Hansi & Gasith",
-  //       title_2: "Pre Wedding shoot",
-  //     },
-  //     {
-  //       image: image4 ,
-  //       title_1: "Maneesha & Bhathiya",
-  //       title_2: "Wedding",
-  //     },
-  //   ],
-  //   [
-  //     {
-  //       image:  image1 ,
-  //       title_1: "Binura & Uthpala",
-  //       title_2: "Engagment",
-  //     },
-  //     {
-  //       image:  image2 ,
-  //       title_1: "Hansi & Gasith",
-  //       title_2: "Pre Wedding shoot",
-  //     },
-  //     {
-  //       image: image3 ,
-  //       title_1: "Maneesha & Bhathiya",
-  //       title_2: "Wedding",
-  //     },
-  //   ],
-  //   [
-  //     {
-  //       image:  image1 ,
-  //       title_1: "Binura & Uthpala",
-  //       title_2: "Engagment",
-  //     },
-  //     {
-  //       image:  image5 ,
-  //       title_1: "Hansi & Gasith",
-  //       title_2: "Pre Wedding shoot",
-  //     },
-  //     {
-  //       image: image3 ,
-  //       title_1: "Maneesha & Bhathiya",
-  //       title_2: "Wedding",
-  //     },
-  //   ],
-  // ];
+
   const cardDetails = [
     {
       type: "engagements",
@@ -329,40 +241,7 @@ const Gallery = () => {
           </span>
         </section>
         <section className="gallary_section_body">
-          {/* <PageItemCard
-            image={image1}
-            title_1={"Binura & Uthpala"}
-            title_2={"Engagment"}
-          />
-          <PageItemCard
-            image={image2}
-            title_1={"Hansi & Gasith"}
-            title_2={"Pre Wedding shoot"}
-          />
-          <PageItemCard
-            image={image3}
-            title_1={"Maneesha & Bhathiya"}
-            title_2={"Wedding"}
-          /> */}
-
-          {/* {cardDetails.set1[0]}
-            {cardDetails.set1[1]}
-            {cardDetails.set1[2]} */}
-          {/* {cardDetails.map((itemSet) => {
-            return (
-              <div className="item_cardWrapper">
-                {itemSet.map((singleItem) => {
-                  return (
-                    <PageItemCard
-                      image={singleItem.image}
-                      title_1={singleItem.title_1}
-                      title_2={singleItem.title_2}
-                    />
-                  );
-                })}
-              </div>
-            );
-          })} */}
+       
           {
             <div
               ref={ItemDivRef}
