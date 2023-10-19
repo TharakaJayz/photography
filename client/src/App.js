@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import GallaryPage from "./pages/Gallary_page/GallaryPage";
 
 const App = () => {
   const [isLoading,setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ const App = () => {
     <Route path="/gallery"  element={<Gallery />}   />
     <Route path="/contact"  element={<Contact />}   />
     <Route path="/about"  element={<About />}   />
+    <Route path="/gallery/: "  element={<GallaryPage />}   />
     </Routes>
     
     
