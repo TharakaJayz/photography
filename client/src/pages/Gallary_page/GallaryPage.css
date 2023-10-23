@@ -3,6 +3,23 @@
     width: var(--width_main);
     padding:0px var(--padd_main);
     padding-top:var(--nav_size);
-    background-color: red;
+    /* background-color: red; */
 
+}
+
+.GP-content{
+    width: 100%;
+}
+
+.content_sec-1{
+    width: 100%;
+}
+
+#sec_1_head_1{
+    font-weight: unset;
+    /* font-size: 4rem; */
+    font-size: clamp(2rem , 3vw + 1rem , 6rem);
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-second);
 }

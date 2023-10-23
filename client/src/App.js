@@ -24,7 +24,7 @@ const App = () => {
     <Route path="/gallery"  element={<Gallery />}   />
     <Route path="/contact"  element={<Contact />}   />
     <Route path="/about"  element={<About />}   />
-    <Route path="/gallery/: "  element={<GallaryPage />}   />
+    <Route path="/gallery/:albumID"  element={<GallaryPage />}   />
     </Routes>
     
     
