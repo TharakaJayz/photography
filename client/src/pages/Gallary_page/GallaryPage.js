@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./GallaryPage.css";
 import { useParams } from "react-router-dom";
 import { data } from "../../Data/Data";
+import FooterMy from "../../components/Footer/FooterMy";
 const GallaryPage = () => {
   const params = useParams();
   const albumId = params.albumID;
@@ -49,16 +50,27 @@ const GallaryPage = () => {
     <div className="gallaryPage_main">
       <div className="GP-content">
         <section className="content_sec-1">
+     
+          <img src= {Album.data.main_img} alt="main" id="CS_main_img" />
           <h1 id="sec_1_head_1">
             {
               Album.data.title
               //  {Album.data.main_img}
-            }{" "}
+            }
           </h1>
-          <img src= {Album.data.main_img} alt="main" id="CS_main_img" />
-          <span>{params.albumID}</span>
         </section>
-        <section className="content_sec-2">{}</section>
+        <section className="content_sec-2">
+          <div className="CS-2_body">
+            {
+              Album.data.sub_img.map((image) =>{
+                let i = 0;
+                return <img src = {image}  alt= {`pic -${i}`}   />
+              
+              })
+            }
+          </div>
+        </section>
+        <FooterMy />
       </div>
     </div>
   );
