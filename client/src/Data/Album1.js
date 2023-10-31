@@ -16,9 +16,9 @@ import img15 from "../assets/Maneesha_Bhathiya/img_15.jpg";
 import img16 from "../assets/Maneesha_Bhathiya/img_16.jpg";
 
 export const album1 = {
-  id: "Hansi_Gasith",
+  id: "Maneesha_Bhathiya",
   data: {
-    title: "Hansi & Gasith",
+    title: "Maneesha & Bhathiya",
     main_img: img15,
     sub_img: [
       img1,

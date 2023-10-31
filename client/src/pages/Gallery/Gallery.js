@@ -108,7 +108,7 @@ const Gallery = () => {
     {
       type: "weddings",
       image: image3,
-      title_1: "Maneesha & Bhathiya",
+      title_1: "Malki & Ravindu",
       title_2: "Wedding",
     },
 
