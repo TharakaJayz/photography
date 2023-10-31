@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import FooterMy from "../../components/Footer/FooterMy";
 import PageHeadCard from "../../components/pageHeadCard/PageHeadCard";
-import conactBack from "../../assets/back contact.jpg";
+import conactBack from "../../assets/page_headers/heading 1.jpg";
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";

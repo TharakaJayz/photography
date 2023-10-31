@@ -70,10 +70,10 @@ const NavSec2Card = (props) => {
           window.location.reload();
       }}
         onMouseEnter={() => {
-          setClassStyle("home-hover");
+          setClassStyle("Services-hover");
         }}
         onMouseLeave={() => {
-          setClassStyle("home-hove-leave");
+          setClassStyle("Services-hove-leave");
         }}
       >
         About

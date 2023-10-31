@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import PageHeadCard from "../../components/pageHeadCard/PageHeadCard";
 import FooterMy from "../../components/Footer/FooterMy";
-import aboutBackground from "../../assets/cover.jpg";
+import aboutBackground from "../../assets/page_headers/heading 2.jpg";
 import photograper from "../../assets/photograper 2.jpg";
 import engagementSVG from "../../assets/engagement-ring.png";
 import weddingSVG from "../../assets/wedding.png";

@@ -15,7 +15,7 @@
     background-color: #fff;
     background-position: center;
     background-size: cover;
-   
+    
     /* background-attachment: fixed; */
     /* filter: grayscale(0%) brightness(70%) saturate(0%); */
     /* background-color: red; */
@@ -30,8 +30,9 @@
   
   
   .home-hover{
-    background-image: url('../../../assets/background\ 1.jpg');
+    background-image: url('../../../assets/navbar/nav_img_1.jpg');
     color: #fff !important;
+    
   }
 
   .home-hove-leave{
@@ -41,7 +42,7 @@
 
 
  .gallery-hover{
-    background-image: url('../../../assets/camare\ 1.jpg'); 
+    background-image: url('../../../assets/navbar/nav_img_2.jpg'); 
     color: #fff !important;
   }
 
@@ -50,8 +51,9 @@
   }
 
  .Services-hover{
-    background-image: url('../../../assets/cam\ set.jpeg');
+    background-image: url('../../../assets/navbar/nav_img_3.jpg');
     color: #fff !important;
+    background-position:top q;
   }
 
   .Services-hove-leave{
@@ -69,7 +71,7 @@
 
 
  .Contact-hover{
-    background-image: url('../../../assets/back\ contact.jpg');
+    background-image: url('../../../assets/navbar//nav_img_4.jpg');
     color: #fff !important;
   }
 

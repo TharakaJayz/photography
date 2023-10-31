@@ -9,7 +9,7 @@ import image3 from "../../assets/wedding_1.jpg";
 import image4 from "../../assets/wedding_2.jpg";
 import image5 from "../../assets/preWedding_2.jpg";
 import FooterMy from "../../components/Footer/FooterMy";
-import gallaryBackground from "../../assets/back 3.jpg";
+import gallaryBackground from "../../assets/page_headers/heading 3.jpg";
 const Gallery = () => {
   const [slectedTitle, setSelectedTitle] = useState("all");
   const [slectedDisplayTitle, setSelectedDisplayTitle] = useState("all");
