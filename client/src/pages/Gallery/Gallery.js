@@ -10,6 +10,8 @@ import image4 from "../../assets/wedding_2.jpg";
 import image5 from "../../assets/preWedding_2.jpg";
 import FooterMy from "../../components/Footer/FooterMy";
 import gallaryBackground from "../../assets/page_headers/heading 3.jpg";
+
+import {cardDetails} from "../../Data/GallaryData";
 const Gallery = () => {
   const [slectedTitle, setSelectedTitle] = useState("all");
   const [slectedDisplayTitle, setSelectedDisplayTitle] = useState("all");
@@ -92,83 +94,83 @@ const Gallery = () => {
   }, []);
 
 
-  const cardDetails = [
-    {
-      type: "engagements",
-      image: image1,
-      title_1: "Binura & Uthpala",
-      title_2: "Engagment",
-    },
-    {
-      type: "prewedding",
-      image: image2,
-      title_1: "Hansi & Gasith",
-      title_2: "Pre Wedding shoot",
-    },
-    {
-      type: "weddings",
-      image: image3,
-      title_1: "Malki & Ravindu",
-      title_2: "Wedding",
-    },
+  // const cardDetails = [
+  //   {
+  //     type: "engagements",
+  //     image: image1,
+  //     title_1: "Binura & Uthpala",
+  //     title_2: "Engagment",
+  //   },
+  //   {
+  //     type: "prewedding",
+  //     image: image2,
+  //     title_1: "Hansi & Gasith",
+  //     title_2: "Pre Wedding shoot",
+  //   },
+  //   {
+  //     type: "weddings",
+  //     image: image3,
+  //     title_1: "Malki & Ravindu",
+  //     title_2: "Wedding",
+  //   },
 
-    {
-      type: "engagements",
-      image: image1,
-      title_1: "Binura & Uthpala",
-      title_2: "Engagment",
-    },
-    {
-      type: "prewedding",
-      image: image2,
-      title_1: "Hansi & Gasith",
-      title_2: "Pre Wedding shoot",
-    },
-    {
-      type: "weddings",
-      image: image4,
-      title_1: "Maneesha & Bhathiya",
-      title_2: "Wedding",
-    },
+  //   {
+  //     type: "engagements",
+  //     image: image1,
+  //     title_1: "Binura & Uthpala",
+  //     title_2: "Engagment",
+  //   },
+  //   {
+  //     type: "prewedding",
+  //     image: image2,
+  //     title_1: "Hansi & Gasith",
+  //     title_2: "Pre Wedding shoot",
+  //   },
+  //   {
+  //     type: "weddings",
+  //     image: image4,
+  //     title_1: "Maneesha & Bhathiya",
+  //     title_2: "Wedding",
+  //   },
 
-    {
-      type: "engagements",
-      image: image1,
-      title_1: "Binura & Uthpala",
-      title_2: "Engagment",
-    },
-    {
-      type: "prewedding",
-      image: image2,
-      title_1: "Hansi & Gasith",
-      title_2: "Pre Wedding shoot",
-    },
-    {
-      type: "weddings",
-      image: image3,
-      title_1: "Maneesha & Bhathiya",
-      title_2: "Wedding",
-    },
+  //   {
+  //     type: "engagements",
+  //     image: image1,
+  //     title_1: "Binura & Uthpala",
+  //     title_2: "Engagment",
+  //   },
+  //   {
+  //     type: "prewedding",
+  //     image: image2,
+  //     title_1: "Hansi & Gasith",
+  //     title_2: "Pre Wedding shoot",
+  //   },
+  //   {
+  //     type: "weddings",
+  //     image: image3,
+  //     title_1: "Maneesha & Bhathiya",
+  //     title_2: "Wedding",
+  //   },
 
-    {
-      type: "engagements",
-      image: image1,
-      title_1: "Binura & Uthpala",
-      title_2: "Engagment",
-    },
-    {
-      type: "prewedding",
-      image: image5,
-      title_1: "Hansi & Gasith",
-      title_2: "Pre Wedding shoot",
-    },
-    {
-      type: "weddings",
-      image: image3,
-      title_1: "Maneesha & Bhathiya",
-      title_2: "Wedding",
-    },
-  ];
+  //   {
+  //     type: "engagements",
+  //     image: image1,
+  //     title_1: "Binura & Uthpala",
+  //     title_2: "Engagment",
+  //   },
+  //   {
+  //     type: "prewedding",
+  //     image: image5,
+  //     title_1: "Hansi & Gasith",
+  //     title_2: "Pre Wedding shoot",
+  //   },
+  //   {
+  //     type: "weddings",
+  //     image: image3,
+  //     title_1: "Maneesha & Bhathiya",
+  //     title_2: "Wedding",
+  //   },
+  // ];
 
   return (
     <div className="gallery-main">
