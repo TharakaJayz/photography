@@ -73,6 +73,7 @@
  .Contact-hover{
     background-image: url('../../../assets/navbar//nav_img_4.jpg');
     color: #fff !important;
+    background-position: center;
   }
 
   .Contact-hove-leave{

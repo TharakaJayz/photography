@@ -24,11 +24,7 @@ const About = () => {
             </section>
             <section className="AB_sec-2">
               <p className="AB_sec-2_p">
-                We are Ceylon Wedlock, professional and well known wedding
-                photographers in the island based in Colombo.Our team is
-                dedicated in capturing the most scenic and blissful moments of
-                your big day to make it memorable with passion and professional
-                cognizance
+              Weddings are a celebration of love, and we understand the importance of creating images that stand the test of time. Our wedding photography exudes timeless elegance, ensuring that your photos become cherished family heirlooms that you can pass down through generations. We focus on creating images that not only look beautiful today but also evoke the same emotions when you revisit them in the years to come.
               </p>
               <section className="AB_sec-2_sec">
                 <div className="AB_sec-2_sec-div">
@@ -68,7 +64,7 @@ const About = () => {
                   </section>
                 </div>
               </section>
-              <p className="AB_sec-2_p"> We make sure that you feel comfortable and stress-free on your wedding day with our experience and instincts. Our ultimate goal is to let you enjoy your big day while catering a dextrous service.</p>
+              <p className="AB_sec-2_p"> A wedding day is filled with emotionally charged moments that deserve to be captured with precision and sensitivity. From the tears of joy during the vows to the radiant smiles on the dance floor, we specialize in capturing the raw emotions that make your wedding day extraordinary. We pride ourselves on being there to document every hug, every tear, and every unscripted moment, creating a visual story that reflects the love and connection you share with your partner and loved ones.</p>
             </section>
           </div>
         </div>
