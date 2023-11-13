@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./PageHeadCard.css";
-import backgroundGallery from "../../assets/back 3.jpg";
 const PageHeadCard = (props) => {
   const [isLoading, setIsLoading] = useState(true);
 

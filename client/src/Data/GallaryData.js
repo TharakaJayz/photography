@@ -30,7 +30,7 @@ export const cardDetails = [
       type: "prewedding",
       image: abirandiAvishkaPreWedding,
       title_1: "Abirandi & Avishka",
-      title_2: "Pre Wedding shoot",
+      title_2: "Pre Wedding shoot", 
     },
     {
       type: "prewedding",
@@ -39,10 +39,10 @@ export const cardDetails = [
       title_2: "Pre Wedding shoot",
     },
     {
-      type: "prewedding",
+      type: "engagements",
       image: kaveeNadumalPreWedding,
       title_1: "Kavee & Nadumal",
-      title_2: "Pre Wedding shoot",
+      title_2: "Engagement",
     },
 
   ];

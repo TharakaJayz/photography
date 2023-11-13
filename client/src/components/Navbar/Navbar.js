@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { AiOutlinePlus } from "react-icons/ai";
-// import NavCard from "./navCard/NavSec2Card";
 import NavSec2Card from "./navCard/NavSec2Card";
 import { useNavigate } from "react-router-dom";
 import ameliaLogo from '../../assets/image002-removebg-preview.png';
